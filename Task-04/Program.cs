@@ -8,13 +8,23 @@ void FillArray(int[] array)
     }
 }
 
-int[] ReplaceArray(int[] array)
+// int[] ReplaceArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = array[i] * (-1);
+//     }
+//     return array;
+// }
+
+int[] OppositeNumbers(int[] array)
 {
-    for (int i = 0; i < array.Length; i++)
-    {
-        array[i] = array[i] * (-1);
-    }
-    return array;
+	int[] result = new int[array.Length];
+	for(int i = 0; i < array.Length; i++)
+	{
+		result[i] = -array[i];
+	}
+	return result;
 }
 
 void PrintArray(int[] array)
@@ -29,6 +39,5 @@ void PrintArray(int[] array)
 int[] array = new int[8];
 FillArray(array);
 PrintArray(array);
-PrintArray(ReplaceArray(array));
-
-
+// PrintArray(ReplaceArray(array));
+PrintArray(OppositeNumbers(array));
