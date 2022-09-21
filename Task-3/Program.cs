@@ -32,5 +32,4 @@ int SegmentNumbers(int[] arr)
     return count;
 }
 
-SegmentNumbers(array);
-Console.WriteLine($"Количество чисел из диапазона [10, 99] равно {SegmentNumbers(array)}");
+Console.WriteLine($"Количество чисел из диапазона [10, 99] равно {SegmentNumbers(array)}.");
